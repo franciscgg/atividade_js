@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 3</title>
+</head>
+<body>
+   <h1> FAST FOOD</h1> 
+   <h3>1 - Big Super Sanduba - Especificação = 2 hambúrgueres, queijo, batata frita e refrigerante - Preço R$ 5,00</h3>
+   <h3>2 - Quase Super Sanduba - Especificação = 1 hambúrgueres, batata frita e refrigerante - Preço R$ 3,00</h3>
+   <h3>2 - Mirradus Sanduba - Especificação = 1 misto quente e refrigerante - Preço R$ 1,50</h3>
+
+   <div id="fastfood"></div>
+   <script>
+    const Valor_1 = 5.00;
+    const Valor_2 = 3.00;
+    const Valor_3 = 1.50;
+
+    let cliente = prompt("Qual o seu nome:");
+    let pedido = prompt("Qual número do seu pedido:");
+    let resul;
+
+    if(pedido == 1){
+        resul = "Cliente: " + cliente + " Valor a ser pago é de: R$" + Valor_1
+    }
+    else if(pedido == 2){
+        resul = "Cliente: " + cliente + " Valor a ser pago é de: R$" + Valor_2
+    }
+    else if(pedido == 3){
+        resul = "Cliente: " + cliente + " Valor a ser pago é de: R$" + Valor_3
+    }
+
+    document.getElementById("fastfood").innerHTML = resul;
+   </script>
+</body>
+</html>

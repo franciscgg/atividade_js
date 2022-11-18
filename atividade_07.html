@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 7</title>
+</head>
+<body>
+    <h1>Data</h1>
+    <div id="data"></div>
+    <script>
+        let dia = Number(prompt("Digite o Dia"));
+        let mes = Number(prompt("Digite o Mês"));
+        let ano = Number(prompt("Digite o Ano"));
+        let exibir;
+
+        exibir = "Hoje é dia " + dia + "De " + mes + " Do ano " + ano;
+
+        if(mes == 1){
+            resul = "Dia: " + dia + "de Janeiro" + ano
+        }
+        else if(mes == 2){
+            resul = "Dia: " + dia + "de Fevereiro" + ano
+        }
+        else if(mes == 3){
+            resul = "Dia: " + dia + "de Março" + ano
+        }
+        else if(mes == 4){
+            resul = "Dia: " + dia + "de Abril" + ano
+        }
+        else if(mes == 5){
+            resul = "Dia: " + dia + "de Maio" + ano
+        }
+        else if(mes == 6){
+            resul = "Dia: " + dia + "de Junho" + ano
+        }
+        else if(mes == 7){
+            resul = "Dia: " + dia + "de Julho" + ano
+        }
+        else if(mes == 8){
+            resul = "Dia: " + dia + "de Agosto" + ano
+        }
+        else if(mes == 9){
+            resul = "Dia: " + dia + "de Setembro" + ano
+        }
+        else if(mes == 10){
+            resul = "Dia: " + dia + "de Outubro" + ano
+        }
+        else if(mes == 11){
+            resul = "Dia: " + dia + "de Novembro" + ano
+        }
+        else if(mes == 12){
+            resul = "Dia: " + dia + "de Dezembro" + ano
+        }
+
+        document.getElementById("data").innerHTML = resul;
+    </script>
+</body>
+</html>
